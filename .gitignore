@@ -1,3 +1,17 @@
-Desenvolvimento/3.Implementação/DSIM-COD/DSIM/node_modules
-Desenvolvimento/3.Implementação/DSIM-COD/DSIM/Oracle_JDK-24
-Desenvolvimento/3.Implementação/DSIM-COD/DSIM/certificados
+# dependencies
+/node_modules
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

@@ -1,0 +1,22 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    # Vite outputs to `dist` por padrão (ver `vite.config.ts`)
+    baseDirectory: dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+  # Regra simples para SPA (roteamento do React)
+  customRules:
+    - source: "/<*>"
+      target: "/index.html"
+      status: 200
