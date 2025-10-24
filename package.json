@@ -10,20 +10,20 @@
     "deploy": "npm run build && aws s3 sync dist/ s3://seu-bucket-frontend --delete"
   },
   "dependencies": {
+    "aws-amplify": "^6.0.0",
+    "axios": "^1.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0",
     "react-router-dom": "^6.8.1",
-    "axios": "^1.6.0",
-    "aws-amplify": "^6.0.0",
     "recharts": "^2.8.0",
-    "swiper": "^11.0.0",
-    "react-icons": "^4.12.0"
+    "swiper": "^11.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react": "^4.2.1",
     "typescript": "^5.2.2",
-    "vite": "^5.0.8"
+    "vite": "^7.1.12"
   }
 }
